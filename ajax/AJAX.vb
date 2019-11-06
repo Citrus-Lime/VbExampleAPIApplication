@@ -29,7 +29,7 @@ Public Class AJAX
 
         Dim results As New CallResults
         Dim appendOrQueryString = IIf(apiMethod.Contains("?"), "&", "?")
-        Dim pagedUrl = $"{uri}{appendOrQueryString}PageNumber="
+        Dim pagedUrl = $"{uri}{appendOrQueryString}pageNumber="
         Dim nextUrl As String = uri
 
         Do
